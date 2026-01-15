@@ -8,6 +8,12 @@ body {
   background-color: #0f0f10;
   color: #e5e5e5;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
 
 .app {
   display: flex;
@@ -45,7 +51,7 @@ body {
   width: 24px;
   height: 16px;
   border:none;
-  margin-left: 10px;
+  margin-left: auto;
 }
  .button-menu span {
   background-color: #f4f4f5;
@@ -278,13 +284,13 @@ border-color: #6bffb0;
 box-shadow: 3px 3px  15px rgba(105, 250, 153, 0.4);
 }
 
-.medium.tag {
+.medium .tag {
   background-color: #1f3a2a;
   color: #6bffb0;
   transition: 0.5s;
 }
 
-.medium.tag:hover {
+.medium .tag:hover {
 border-color: #6bffb0;
 box-shadow: 3px 3px  15px rgba(105, 250, 190, 0.4);
 font-weight: bold;
@@ -299,13 +305,107 @@ input[type="date"] {
 
 @media screen and (max-width: 1000px){
 
+  
+  .sidebar {
+    display: none; 
+    
+  }
+
+ 
+  .button-menu {
+    display: block;
+  }
+
+ 
+  .app {
+    flex-direction: column;
+  }
+
+  
+  .content {
+    padding: 30px;
+  }
+
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 15px;
+  }
+
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+ 
+  .panel {
+    padding: 20px;
+  }
+
+  
+  button {
+    font-size: 15px;
+    padding: 11px;
+  }
+
+  /* Tarjetas más compactas */
+  .card {
+    padding: 14px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
 }
 
+
 @media screen and (max-width: 600px){
-.sidebar {
-  display:none;
-}
+  .sidebar { 
+  display: none; 
+  }
+
 .button-menu{
-  display:block;
+display:block;
+}
+.app { 
+flex-direction: column; 
+} 
+.content { 
+padding: 20px;
+}  
+header h1 {
+font-size: 24px; 
+} 
+header p { 
+  font-size: 14px; 
+} 
+.grid { 
+  grid-template-columns: 1fr; gap: 20px; 
+} 
+.panel { 
+padding: 15px; 
+} 
+button { 
+font-size: 14px; 
+padding: 10px; 
+} 
+
+.card { 
+  padding: 12px; 
+} 
+.card h3 { 
+font-size: 14px; 
+} 
+.card p { 
+font-size: 12px; 
 }
 }
+
