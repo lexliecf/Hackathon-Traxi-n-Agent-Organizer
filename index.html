@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agent Organizer – AI Task Prioritizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>🤖 Agent Organizer</h2>
+      <nav>
+        <p class="active">Dashboard</p>
+        <p>My Tasks</p>
+        <p>Priorities</p>
+        <p>Calendar</p>
+        <p>Settings</p>
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="content">
+
+      <header>
+        <h1>AI Task Prioritizer</h1>
+        <p>Your intelligent assistant for organizing tasks by urgency and importance.</p>
+      </header>
+
+      <div class="grid">
+
+        <!-- Add task -->
+        <section class="panel">
+          <h2>Add new task</h2>
+
+          <label>Task name</label>
+          <input type="text" placeholder="e.g. Study for math exam">
+
+          <label>Deadline</label>
+          <input type="date">
+
+          <label>Importance</label>
+          <div class="badges">
+            <span class="badge high">High</span>
+            <span class="badge medium">Medium</span>
+            <span class="badge low">Low</span>
+          </div>
+
+          <button>Add & Analyze</button>
+        </section>
+
+        <!-- AI analysis -->
+        <section class="panel">
+          <h2>AI Analysis</h2>
+          <p class="description">
+            I have analyzed your tasks and sorted them based on urgency and importance.
+          </p>
+
+          <div class="tasks">
+
+            <div class="card urgent">
+              <h3>Clean room</h3>
+              <p>📅 Today</p>
+              <span class="tag">Urgent</span>
+            </div>
+
+            <div class="card high">
+              <h3>Finish homework</h3>
+              <p>📅 Tomorrow</p>
+              <span class="tag">High priority</span>
+            </div>
+
+            <div class="card medium">
+              <h3>Study for exam</h3>
+              <p>📅 In 5 days</p>
+              <span class="tag">Medium priority</span>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
