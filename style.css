@@ -39,6 +39,27 @@ body {
   color: #ffffff;
 }
 
+.button-menu{
+  background-color: #0f0f10;
+  display: none;
+  width: 24px;
+  height: 16px;
+  border:none;
+  margin-left: 10px;
+}
+ .button-menu span {
+  background-color: #f4f4f5;
+  display: block;
+  height: 2px;
+  margin: 4px 0;
+  width: 100%;
+  transition: all .3s ease;
+  cursor: pointer;
+ }
+ .button-menu:hover{
+  box-shadow: 2px 2px 10px rgb(127, 127, 129);
+ }
+
 /* Content */
 
 .content {
@@ -121,16 +142,30 @@ input:focus {
 .badge.high {
   background-color: #3a1f1f;
   color: #ff6b6b;
+  transition: 0.6s;
+}
+
+.badge.high:hover {
+box-shadow: 3px 3px  15px rgba(250, 105, 105, 0.4);
 }
 
 .badge.medium {
   background-color: #3a321f;
   color: #ffd36b;
+  transition: 0.6s;
+}
+.badge.medium:hover {
+  box-shadow: 3px 3px  12px rgba(250, 187, 105, 0.4);
 }
 
 .badge.low {
   background-color: #1f3a2a;
   color: #6bffb0;
+  transition: 0.6s;
+}
+
+.badge.low:hover{
+  box-shadow: 3px 3px  15px rgba(105, 250, 153, 0.4);
 }
 
 /* Button */
@@ -145,10 +180,12 @@ button {
   border-radius: 10px;
   font-size: 15px;
   cursor: pointer;
+  transition: 0.7s;
 }
 
 button:hover {
-  background-color: #3b73d1;
+  background-color: #5a88d8;
+  box-shadow: 3px 3px 10px #578bec;
 }
 
 /* Tasks */
@@ -237,17 +274,17 @@ font-weight: bold;
   transition: 0.5s;
 }
 .medium:hover {
-  border-color: #6bffb0;
+border-color: #6bffb0;
 box-shadow: 3px 3px  15px rgba(105, 250, 153, 0.4);
 }
 
-.medium .tag {
+.medium.tag {
   background-color: #1f3a2a;
   color: #6bffb0;
   transition: 0.5s;
 }
 
-.medium .tag:hover {
+.medium.tag:hover {
 border-color: #6bffb0;
 box-shadow: 3px 3px  15px rgba(105, 250, 190, 0.4);
 font-weight: bold;
@@ -258,4 +295,17 @@ input[type="date"] {
   color-scheme: dark;
 }
 
+/* Media queries */
 
+@media screen and (max-width: 1000px){
+
+}
+
+@media screen and (max-width: 600px){
+.sidebar {
+  display:none;
+}
+.button-menu{
+  display:block;
+}
+}
