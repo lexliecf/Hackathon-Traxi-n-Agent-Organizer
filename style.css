@@ -103,34 +103,20 @@ input:focus {
   border-color: #4f8cff;
 }
 
-/* Badges */
-
-.badges {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
+input[type="date"] {
+  color-scheme: dark;
 }
 
-.badge {
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-  cursor: pointer;
-}
+/* AI note */
 
-.badge.high {
-  background-color: #3a1f1f;
-  color: #ff6b6b;
-}
-
-.badge.medium {
-  background-color: #3a321f;
-  color: #ffd36b;
-}
-
-.badge.low {
-  background-color: #1f3a2a;
-  color: #6bffb0;
+.ai-note {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin: 12px 0 18px;
+  border: 1px dashed rgba(255, 255, 255, 0.08);
 }
 
 /* Button */
@@ -187,7 +173,7 @@ button:hover {
   border-radius: 12px;
 }
 
-/* Priority colors */
+/* Priority colors (AI output) */
 
 .urgent {
   border-color: #ff6b6b;
@@ -215,9 +201,3 @@ button:hover {
   background-color: #1f3a2a;
   color: #6bffb0;
 }
-
-input[type="date"] {
-  color-scheme: dark;
-}
-
-
