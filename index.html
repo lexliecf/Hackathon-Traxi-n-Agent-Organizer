@@ -2,87 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Task Urgency and Priority Analyzer – AI Agent</title>
+  <title>Customer Health Analyzer – AI Agent</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="app">
+<div class="app">
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h2>🤖 Agent Organizer</h2>
-      <nav>
-        <p class="active">Dashboard</p>
-        <p>My Tasks</p>
-        <p>Priorities</p>
-        <p>Calendar</p>
-        <p>Settings</p>
-      </nav>
-    </aside>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>🤖 Customer Health Agent</h2>
+    <nav>
+      <p class="active">Dashboard</p>
+      <p>Clients</p>
+      <p>Risk Levels</p>
+      <p>Actions</p>
+      <p>Settings</p>
+    </nav>
+  </aside>
 
-    <!-- Main content -->
-    <main class="content">
+  <!-- Main content -->
+  <main class="content">
 
-      <header>
-        <h1>AI Task Prioritizer</h1>
-        <p>Your intelligent assistant organizes tasks automatically based on urgency and complexity.</p>
-      </header>
+    <header>
+      <h1>Customer Health Dashboard</h1>
+      <p>
+        AI-powered agent that analyzes customer metrics, detects early risk signals,
+        and prioritizes preventive actions to reduce churn.
+      </p>
+    </header>
 
-      <div class="grid">
+    <div class="grid">
 
-        <!-- Add task -->
-        <section class="panel">
-          <h2>Add new task</h2>
+      <!-- Add customer metrics -->
+      <section class="panel">
+        <h2>Add customer metrics</h2>
 
-          <label>Task name</label>
-          <input type="text" placeholder="e.g. Study for math exam">
+        <label>Customer name or ID</label>
+        <input type="text" placeholder="e.g. Client ABC">
 
-          <label>Deadline</label>
-          <input type="date">
+        <label>Critical date (renewal / SLA)</label>
+        <input type="date">
 
-          <p class="ai-note">
-            The AI will automatically analyze urgency and priority.
-          </p>
+        <label>Recent incidents</label>
+        <input type="number" placeholder="e.g. 3">
 
-          <button>Add & Analyze</button>
-        </section>
+        <p class="ai-note">
+          The AI agent will analyze these metrics to determine the customer risk level
+          and suggest preventive actions.
+        </p>
 
-        <!-- AI analysis -->
-        <section class="panel">
-          <h2>AI Analysis</h2>
-          <p class="description">
-            The AI has analyzed your tasks and sorted them by urgency and complexity.
-          </p>
+        <button>Analyze Customer</button>
+      </section>
 
-          <div class="tasks">
+      <!-- AI analysis -->
+      <section class="panel">
+        <h2>Customer Health Analysis</h2>
+        <p class="description">
+          The AI agent has evaluated customer metrics and prioritized them
+          based on risk and urgency.
+        </p>
 
-            <div class="card urgent">
-              <h3>Clean room</h3>
-              <p>📅 Today</p>
-              <span class="tag">Urgent</span>
-            </div>
+        <div class="tasks">
 
-            <div class="card high">
-              <h3>Finish homework</h3>
-              <p>📅 Tomorrow</p>
-              <span class="tag">High priority</span>
-            </div>
-
-            <div class="card medium">
-              <h3>Study for exam</h3>
-              <p>📅 In 5 days</p>
-              <span class="tag">Medium priority</span>
-            </div>
-
+          <div class="card urgent">
+            <button class="done-btn">Done</button>
+            <h3>Client ABC</h3>
+            <p>📅 Renewal in 2 days</p>
+            <span class="tag">High Risk</span>
+            <p class="action">Recommended action: Immediate call + on-site visit</p>
           </div>
-        </section>
 
-      </div>
+          <div class="card high">
+            <button class="done-btn">Done</button>
+            <h3>Client XYZ</h3>
+            <p>📅 SLA review in 7 days</p>
+            <span class="tag">Medium Risk</span>
+            <p class="action">Recommended action: Follow-up call within 24h</p>
+          </div>
 
-    </main>
+          <div class="card medium">
+            <button class="done-btn">Done</button>
+            <h3>Client LMN</h3>
+            <p>📅 Stable contract</p>
+            <span class="tag">Low Risk</span>
+            <p class="action">Recommended action: Preventive email</p>
+          </div>
 
-  </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+</div>
 
 </body>
 </html>
